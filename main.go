@@ -16,7 +16,7 @@ func main() {
 	}
 	defer db.Close()
 	db.LogMode(true)
-	db.AutoMigrate(model.User{}, model.Picture{}, model.UserPicture{})
+	db.AutoMigrate(model.User{}, model.Picture{}, model.UserPicture{}, model.Tag{})
 
 	// Echo instance
 	e := echo.New()
